@@ -36,7 +36,7 @@ const runProgressionGame = () => {
     }
   }
   
-  console.log(`Conrgatulations, ${userName}!`)
+  console.log(`Congratulations, ${userName}!`)
 }
 
 export default runProgressionGame
