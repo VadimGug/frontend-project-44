@@ -12,7 +12,7 @@ const calculate = (x, y, operator) => {
   }
 }
 
-const getRandomInt = (max) => Math.floor(Math.random() * max)
+const getRandomInt = max => Math.floor(Math.random() * max)
 
 const generateRound = () => {
   const num1 = getRandomInt(50)
