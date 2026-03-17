@@ -19,7 +19,7 @@ const runPrimeGame = () => {
     const number = Math.floor(Math.random() * 100) + 1
     const correctAnswer = isPrime(number) ? 'yes' : 'no'
 
-    console.log(`Question; ${number}`)
+    console.log(`Question: ${number}`)
     const userAnswer = readlineSync.question('Your answer: ')
 
     if (userAnswer === correctAnswer) {
