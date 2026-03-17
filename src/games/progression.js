@@ -4,7 +4,6 @@ import { greeting } from '../cli.js'
 const runProgressionGame = () => {
   const userName = greeting()
   console.log('What number is missing in the progression?')
-  
   const roundsToWin = 3
 
   for (let i = 0; i < roundsToWin; i += 1) {
@@ -35,7 +34,7 @@ const runProgressionGame = () => {
       return
     }
   }
-  
+
   console.log(`Congratulations, ${userName}!`)
 }
 
