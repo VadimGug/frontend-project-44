@@ -6,3 +6,9 @@
 
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=VadimGug_frontend-project-44&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=VadimGug_frontend-project-44)
 
+asciinema:
+brain-even: (https://asciinema.org/a/aWhphEoL8OoyGH1g)
+brain-calc: (https://asciinema.org/a/XxHkQzfhi5WQivb4)
+brain-gcd: (https://asciinema.org/a/3bV3HeRRcAOtJ4yR)
+brain-progression: (https://asciinema.org/a/UCVSWKnIoRthsku4)
+brain-prime: (https://asciinema.org/a/a6M20xUc4IqDaKHH)
