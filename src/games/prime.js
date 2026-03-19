@@ -1,5 +1,6 @@
 import readlineSync from 'readline-sync'
 import { greeting } from '../cli.js'
+import { getRandomInt } from '../randomInt.js'
 
 const isPrime = (num) => {
   if (num < 2) return false
@@ -16,7 +17,7 @@ const runPrimeGame = () => {
   const roundsToWin = 3
 
   for (let i = 0; i < roundsToWin; i += 1) {
-    const number = Math.floor(Math.random() * 100) + 1
+    const number = getRandomInt(1, 100)
     const correctAnswer = isPrime(number) ? 'yes' : 'no'
 
     console.log(`Question: ${number}`)

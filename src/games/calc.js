@@ -1,4 +1,5 @@
 import runEngine from '../index.js'
+import { getRandomInt } from '../randomInt.js'
 
 const description = 'What is the result of the expression?'
 const operators = ['+', '-', '*']
@@ -12,12 +13,10 @@ const calculate = (x, y, operator) => {
   }
 }
 
-const getRandomInt = max => Math.floor(Math.random() * max)
-
 const generateRound = () => {
-  const num1 = getRandomInt(50)
-  const num2 = getRandomInt(50)
-  const operator = operators[getRandomInt(operators.length)]
+  const num1 = getRandomInt(1, 50)
+  const num2 = getRandomInt(1, 50)
+  const operator = operators[getRandomInt(0, operators.length - 1)]
 
   const question = `${num1} ${operator} ${num2}`
   const answer = String(calculate(num1, num2, operator))

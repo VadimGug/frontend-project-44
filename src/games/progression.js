@@ -1,5 +1,6 @@
 import readlineSync from 'readline-sync'
 import { greeting } from '../cli.js'
+import { getRandomInt } from '../randomInt.js'
 
 const runProgressionGame = () => {
   const userName = greeting()
@@ -7,15 +8,15 @@ const runProgressionGame = () => {
   const roundsToWin = 3
 
   for (let i = 0; i < roundsToWin; i += 1) {
-    const start = Math.floor(Math.random() * 20) + 1
-    const step = Math.floor(Math.random() * 10) + 2
-    const length = Math.floor(Math.random() * 6) + 5
-    const hiddenIndex = Math.floor(Math.random() * length)
+    const start = getRandomInt(1, 20)
+    const step = getRandomInt(1, 10)
+    const length = getRandomInt(4, 8)
 
     const progression = []
     for (let j = 0; j < length; j += 1) {
       progression.push(start + j * step)
     }
+    const hiddenIndex = getRandomInt(0, progression.length - 1)
 
     const correctAnswer = String(progression[hiddenIndex])
 

@@ -1,5 +1,6 @@
 import readlineSync from 'readline-sync'
-import { greeting } from '../src/cli.js'
+import { greeting } from '../cli.js'
+import { getRandomInt } from '../randomInt.js'
 
 const runEvenGame = () => {
   const userName = greeting()
@@ -8,7 +9,7 @@ const runEvenGame = () => {
   const roundsToWin = 3
 
   for (let i = 0; i < roundsToWin; i += 1) {
-    const number = Math.floor(Math.random() * 100) + 1
+    const number = getRandomInt(1, 100)
     const correctAnswer = number % 2 === 0 ? 'yes' : 'no'
 
     console.log(`Question: ${number}`)
