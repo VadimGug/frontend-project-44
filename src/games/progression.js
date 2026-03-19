@@ -10,7 +10,7 @@ const runProgressionGame = () => {
   for (let i = 0; i < roundsToWin; i += 1) {
     const start = getRandomInt(1, 20)
     const step = getRandomInt(1, 10)
-    const length = getRandomInt(4, 8)
+    const length = getRandomInt(5, 8)
 
     const progression = []
     for (let j = 0; j < length; j += 1) {
